@@ -6,10 +6,6 @@
 }
 
 /* Set the full height for the html and body */
-html,
-body {
-  height: 100%;
-}
 
 /* Body styling */
 body {
@@ -35,11 +31,12 @@ body {
 }
 
 /* Media query for smaller screens */
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   /* Adjust product container layout on smaller screens */
   .product-container {
     width: 18rem;
     flex-direction: column; /* Stack elements vertically */
+    margin: 3rem 0;
   }
 
   /* Adjust product image on smaller screens */
