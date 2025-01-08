@@ -5,8 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Set the full height for the html and body */
-
 /* Body styling */
 body {
   background-color: hsl(30, 38%, 92%); /* Background color */
