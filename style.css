@@ -1,0 +1,119 @@
+/* Global reset for margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the full height for the html and body */
+html,
+body {
+  height: 100%;
+}
+
+/* Body styling */
+body {
+  background-color: hsl(30, 38%, 92%); /* Background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main product container */
+.product-container {
+  width: 36rem;
+  display: flex;
+  background-color: hsl(0, 0%, 100%); /* White background */
+  border-radius: 0.75rem; /* Rounded corners */
+}
+
+/* Product image styling */
+.product-picture {
+  width: 18rem;
+  border-bottom-left-radius: 0.75rem; /* Rounded bottom-left corner */
+  border-top-left-radius: 0.75rem; /* Rounded top-left corner */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  /* Adjust product container layout on smaller screens */
+  .product-container {
+    width: 18rem;
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  /* Adjust product image on smaller screens */
+  .product-picture {
+    object-fit: cover; /* Cover the area */
+    object-position: center; /* Center the image */
+    height: 14rem;
+    border-top-right-radius: 0.75rem; /* Rounded top-right corner */
+    border-top-left-radius: 0.75rem; /* Rounded top-left corner */
+    border-bottom-left-radius: 0; /* Remove bottom-left corner rounding */
+  }
+}
+
+/* Product info section */
+.product-info {
+  width: 18rem;
+  padding: 2rem; /* Padding around the content */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  row-gap: 1rem; /* Space between rows */
+  font-family: "Montserrat"; /* Font for text */
+  font-weight: 500;
+  font-size: 0.875rem; /* Text size */
+  color: hsl(228, 12%, 48%); /* Text color */
+}
+
+/* Perfume name styling */
+.perfume-name {
+  font-family: "Fraunces"; /* Font for the name */
+  font-weight: 700; /* Bold text */
+  font-size: 26px;
+  color: hsl(212, 21%, 14%); /* Dark color for the name */
+  width: 12rem; /* Limit width */
+}
+
+/* Perfume description styling */
+.perfume-description {
+  line-height: 1.5rem; /* Space between lines of text */
+}
+
+/* Price information layout */
+.price-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 11.5rem; /* Width of the price section */
+}
+
+/* Current price styling */
+.current-price {
+  color: hsl(158, 36%, 37%); /* Green color for current price */
+  font-family: "Fraunces"; /* Font for price */
+  font-weight: 700; /* Bold text */
+  font-size: 26px;
+}
+
+/* Button styling */
+button {
+  background-color: hsl(158, 36%, 37%); /* Green background */
+  border: none;
+  color: hsl(0, 0%, 100%); /* White text */
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 0.75rem; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-weight: 700; /* Bold text */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: hsl(158, 36%, 20%); /* Darker green on hover */
+}
+
+/* SVG icon margin */
+svg {
+  margin-right: 1rem; /* Space between the icon and the text */
+}
