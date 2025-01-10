@@ -30,11 +30,3 @@ This is a simple product preview card component designed using HTML and CSS. The
 ## Customization
 
 You can customize the card's appearance by modifying the styles in the `style.css` file. You can change the colors, font sizes, or layout to fit your needs.
-
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
-
-If you have any questions or feedback, feel free to reach out!
